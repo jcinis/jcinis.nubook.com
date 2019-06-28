@@ -1,0 +1,31 @@
+@font-face {
+    font-family:"athelas-1";
+	src: url("/assets/fonts/athelas-eot-normal.eot");
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:"athelas-1";
+	src: url("/assets/fonts/athelas-eot-italic.eot");
+    font-weight:normal;
+    font-style:italic;
+}
+
+@font-face {
+    font-family:"athelas-1";
+	src: url("/assets/fonts/athelas-eot-bold.eot");
+    font-weight:bold;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:"athelas-1";
+	src: url("/assets/fonts/athelas-eot-bold-italic.eot");
+    font-weight:bold;
+    font-style:italic;
+}
+
+.webfont-athelas {
+    font-family:"athelas-1", serif;
+}

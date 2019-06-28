@@ -1,0 +1,150 @@
+
+html { font-family: athelas-1, Georgia, Serif; }
+body { min-width: 1090px; }
+
+/* HEADER ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+#header { background: url("bg.png") top left repeat-y white; width:212px; color:white; float: left; }
+#header .stretcher { margin:0 auto 0 auto; width:212px; position:relative; }
+/*max-width: 1600px;*/
+
+#logo, #slogan { margin-top:0px; margin:5px 27px 0px; }
+#logo { position:relative; margin-top:24px; }
+#slogan { font: italic 13px/20px athelas-1, Georgia, Serif; clear:right; color:black; position:relative; }
+
+#logo.textual a { display:block; color: black; font: bold 24px/24px athelas-1, Georgia, Serif; }
+#logo.textual #graphic { display:none; }
+#logo.graphical #title { display:none; }
+
+#menu {
+    position:relative;
+    font: 20px/24px athelas-1, Georgia, serif;
+    letter-spacing: 0.04em;
+    color: black;
+    margin-top:70px;
+}
+#menu ul { clear:both; }
+#menu ul li { padding:0px 36px 3px 27px; }
+#menu ul li a {
+    display:block; color:black;
+}
+#menu ul li a:hover { color:#999999; }
+#menu ul li.current a { color:#999999; font-style:italic; }
+
+.sitemap-button { display:block; width:19px; height:13px; overflow:hidden; text-indent: -9999px; background: url("./assets.png") 0 -66px; position:absolute; margin-top:17px; margin-left:27px; }
+.sitemap-button:hover { background-position: -19px -66px; }
+
+
+/* STAGE :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+#container { float:right; width:100%; margin-left:-250px; }
+#content { margin-left:250px; position:relative; }
+
+#page-title { overflow:hidden; height:126px; line-height:126px; font-size:25px; color:#000000; text-align:center; text-transform: uppercase; letter-spacing:5px; min-width:1166px; }
+
+#stage { position:relative; overflow: hidden; margin:0 auto 0 auto; min-width:1166px; }
+/* max-width: 1600px; */
+
+#frame-wrap { position:relative; width:990px; height:661px; overflow: hidden; margin:10px auto 10px auto; }
+#frame { background: white; }
+.page-view { width:990px; height:620px; overflow: hidden; }
+.page-view.loading { background: url("3balls.gif") no-repeat center center; }
+.page-view.loading .page { display:none; }
+
+.pagination-arrow { display:block; width:33px; height:33px; overflow:hidden; position:absolute; z-index:10; top:0px; background: url("./assets.png") top left no-repeat; text-indent: -9999px; top:50%; margin-top: -16px; }
+#pagination-previous { left:50%; margin-left: -558px; }
+#pagination-previous:hover { background-position: 0px -33px; }
+#pagination-next { right:50%; margin-right:-558px; background-position: -33px 0px; }
+#pagination-next:hover { background-position: -33px -33px; }
+
+
+
+/* FOOTER ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+#footer { height:48px; color: #444444; bottom:0px; position:absolute; width: 100%; min-width:1166px; }
+#footer .stretcher { margin:0 auto 0 auto; height:48px; position:relative;  }
+/*max-width: 1600px;*/
+
+#nubook-logo {
+    display:block;
+    width:57px;
+    height:48px;
+    overflow:hidden;
+    position: absolute;
+    bottom:0px;
+    right:20px;
+    background: url("./assets.png") 0px -261px;
+    text-indent: -9999px; 
+}
+#nubook-logo:hover { background-position: 0px -309px;}
+
+
+#links { font: bold 11px/48px athelas-1, Georgia, Serif; position:relative; height:48px; overflow: hidden; }
+#links ul li { float:left; margin-left: 20px; }
+#links ul li a { display:block; color: #999999; text-transform: uppercase; letter-spacing: .2em; }
+#links ul li a:hover { color:black; }
+
+#pagebar { width:990px; height: 41px; overflow: hidden; position: relative; }
+#pagebar .date { font: bold 13px/40px athelas-1, Georgia, Serif; color: #999999; padding:1px 0 0 0; position:absolute; top:0px; left:0px; }
+
+.pagination { height:50px; position:relative; top:0px; float:right; left:-50%; text-align:left; }
+.pagination ul { position:relative; left:50%; clear:both; }
+.pagination li { display: block; width: 12px; height:11px; overflow:hidden; float:left; margin-right:1px; margin-top: 17px; padding:0px 1px; }
+.pagination li a { display: block; width: 12px; height:11px; overflow:hidden; background: url(assets.png) 0px -118px; }
+.pagination li.last { margin-right:0px; clear:right; }
+.pagination li a:hover { background-position: -12px -118px; }
+.pagination li.current a, .pagination li.current a:hover { background-position: -24px -118px; }
+
+.pagination .text { position:relative; left:50%; clear:both; font: bold 13px/40px athelas-1, Georgia, Serif; color:#999999; padding-top:1px; }
+
+.facebook-button { display:block; width:16px; height:16px; overflow:hidden; background: url(assets.png) 0px -129px; text-indent: -9999px; position: absolute; right:30px; top:50%; margin-top:-8px; }
+.facebook-button:hover { background-position: 0px -145px; }
+
+.twitter-button { display:block; width:20px; height:16px; overflow:hidden; background: url(assets.png) -16px -129px; text-indent: -9999px; position: absolute; right:0px; top:50%; margin-top:-8px; }
+.twitter-button:hover { background-position: -16px -145px; }
+
+
+/* SITEMAP :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+#sitemap { position:fixed; top:0px; left:0px; width:100%; height:100%; background: url(./white-90.png) repeat; display:none; color:black; font: 20px/20px athelas-1, Georgia, Serif; overflow: scroll; letter-spacing: .15em; z-index: 1000; }
+#sitemap a { color:black; text-decoration: none; }
+#sitemap a:hover { text-decoration: underline; }
+
+#sitemap .inner { padding:20px; }
+#sitemap a.close-button {
+    position: absolute;
+    display: block;
+    top:20px; right:20px;
+    height: 19px; overflow: hidden;
+    padding-right: 29px;
+    font-size: 13px; font-weight: normal; 
+    background: url(./sitemap-close-button-white.png) no-repeat top right;
+}
+#sitemap a.close-button:hover { opacity: .8; }
+
+
+#sitemap h1 { font-size: 24px; line-height: 40px; display: block; margin:0px; padding:0px; }
+
+#sitemap .sitemap-category { margin-bottom: 10px; }
+#sitemap .sitemap-category ul { clear:both; }
+#sitemap .sitemap-category a.title {
+    text-transform: none;
+    display:block;
+    padding: 10px 0px;
+    margin:0px 5px 0px 5px; 
+    clear:both;
+}
+#sitemap .sitemap-page { float:left; margin:10px 10px 0px 0px; }
+#sitemap .sitemap-page.last { clear:right; }
+#sitemap .sitemap-page a {
+    display:block; overflow:hidden;
+    border:5px solid white;
+    opacity: .9;
+}
+#sitemap .sitemap-page a:hover { opacity: 1; }
+
+
+/* FONT REPLACEMENT ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+#wrap { opacity:0; min-width: 1000px; }
+

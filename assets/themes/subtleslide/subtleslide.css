@@ -1,0 +1,158 @@
+body { min-width: 1100px; background: url("./i/bg.png"); }
+
+/* HEADER ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+#header { background: url("./i/header-bg.png") repeat-x; height:102px; color:black; }
+#header .stretcher { width:1030px; height:94px; margin:0 auto 0 auto; position:relative; padding:6px 0 2px; }
+/*max-width: 1600px;*/
+
+#logo-wrap { float:left; padding-bottom:4px; top:50%; margin-top:-26px; position:relative; height:52px; }
+#logo { position:relative; margin: 0px 30px 0px 0px; }
+#slogan { font: italic 13px/16px etica-1, Arial, Helvetica; color: #666666; position:relative; letter-spacing:.08em; }
+
+#logo.textual a { display:block; height:36px; overflow: hidden; text-transform: uppercase; color: black; font: bold 24px/36px etica-light-1, Arial, Helvetica, Sans-Serif; letter-spacing: .2em; }
+#logo.textual.no-slogan a { line-height:52px; }
+#logo.textual #graphic { display:none; }
+#logo.graphical #title { display:none; }
+
+#menu {
+    position:relative;
+    top:50%;
+    float:right;
+    font: bold 12px/21px etica-1, Arial, sans-serif;
+    color: #444444;
+}
+
+#menu ul { clear:both; position:relative; height:21px; top:-11px; }
+#menu ul li {
+    float:left;
+    height:21px;
+    padding-left: 15px;
+    border-left: 1px solid #cccccc;
+    margin-left: 15px;
+}
+#menu ul li a { display:block; color:#999999; text-transform: uppercase; letter-spacing: .15em; position: relative; height:21px; }
+#menu ul li a:hover { color:#666666; }
+#menu ul li.current a { color: black; }
+#menu ul li.first-child { border-left:none; margin-left:0px; }
+
+#menu ul li a .flag { display:block; position:absolute; bottom:-10px; width:100%; height:6px; background: url("./i/menu-item-current.png") no-repeat top center; }
+#menu ul li.current a .flag { background-position: center -6px; }
+
+
+.sitemap-button { display:block; width:35px; height:35px; overflow:hidden; text-indent: -9999px; background: url("./i/sitemap-button.png") 0px 0px; position:absolute; left:50%; top:50%; margin-left:-18px; margin-top:-18px; }
+.sitemap-button:hover { background-position: 0px -35px; }
+
+
+/* STAGE :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+#stage { height: 620px; position:relative; overflow: hidden; width:100%; margin:0 auto 0 auto; }
+/* max-width: 1600px; */
+
+#frame-wrap { position:relative; width:990px; height:661px; overflow: hidden; margin:0px auto 0px auto; background: url("./i/slide-bg.png"); padding:22px 22px 0px 22px; }
+#frame { background: white; }
+.page-view { width:990px; height:620px; overflow: hidden; }
+.page-view.loading { background: url("./i/3balls.gif") no-repeat center center; }
+.page-view.loading .page { display:none; }
+
+.pagination-arrow { display:block; width:29px; height:661px; overflow:hidden; position:absolute; z-index:10; }
+.pagination-arrow .stretcher { display:block; width:29px; height:58px; overflow:hidden; background: url("./i/assets.png") top left no-repeat; margin:301px auto 0 auto; }
+
+.pagination-arrow span { display:none; }
+#pagination-previous { left:0px; }
+#pagination-previous .stretcher { background-position: 0px 0px; }
+#pagination-previous:hover .stretcher { background-position: 0px -59px; }
+#pagination-next { right:0px; }
+#pagination-next .stretcher { background-position: -30px 0px; }
+#pagination-next:hover .stretcher { background-position: -30px -59px; }
+
+
+
+/* FOOTER ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+#footer { height:54px; color: #444444; position:fixed; bottom:0px; width:100%; background:url("./i/footer-bg.png") repeat-x; padding-top:3px; }
+#footer .stretcher { width:1030px;  margin:0 auto 0 auto; height:54px; position:relative;  }
+/*max-width: 1600px;*/
+
+#nubook-logo {
+    display:block;
+    width:57px;
+    height:48px;
+    overflow:hidden;
+    position: absolute;
+    top:2px;
+    right:0px;
+    background: url("./i/assets.png") 0px -261px;
+    text-indent: -9999px; 
+}
+#nubook-logo:hover { background-position: 0px -309px;}
+
+
+#links { font: bold 11px/54px etica-1, Arial, sans-serif; position:relative; height:54px; overflow: hidden; }
+#links ul li { float:left; margin-right: 20px; }
+#links ul li a { display:block; color: #999999; text-transform: uppercase; letter-spacing: .15em; }
+#links ul li a:hover { color:black; }
+
+#pagebar { width:990px; height: 41px; overflow: hidden; position: relative; }
+#pagebar .date { font: bold 11px/38px etica-1, helvetica, arial, sans-serif; color: #808080; padding:1px 0 0 0; }
+
+.pagination { height:41px; position:relative; top:0px; float:right; left:-50%; text-align:left; }
+.pagination ul { position:relative; left:50%; clear:both; }
+.pagination li { display: block; width: 12px; height:11px; overflow:hidden; float:left; margin-right:1px; margin-top: 15px; padding:0px 1px; }
+.pagination li a { display: block; width: 12px; height:11px; overflow:hidden; background: url(i/assets.png) 0px -118px; }
+.pagination li.last { margin-right:0px; clear:right; }
+.pagination li a:hover { background-position: -12px -118px; }
+.pagination li.current a, .pagination li.current a:hover { background-position: -24px -118px; }
+
+.pagination .text { position:relative; left:50%; clear:both; font: bold 11px/38px etica-1, Arial, sans-serif; color:#7C7C7C; padding-top:1px; }
+
+.facebook-button { display:block; width:16px; height:16px; overflow:hidden; background: url(i/assets.png) 0px -129px; text-indent: -9999px; position: absolute; right:30px; top:50%; margin-top:-8px; }
+.facebook-button:hover { background-position: 0px -145px; }
+
+.twitter-button { display:block; width:20px; height:16px; overflow:hidden; background: url(i/assets.png) -16px -129px; text-indent: -9999px; position: absolute; right:0px; top:50%; margin-top:-8px; }
+.twitter-button:hover { background-position: -16px -145px; }
+
+
+/* SITEMAP :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+#sitemap { position:fixed; top:0px; left:0px; width:100%; height:100%; background: url(./i/black-82.png) repeat; display:none; color:white; font: bold 13px/20px etica-1, Helvetica, Arial, Sans-Serif; overflow: scroll; letter-spacing: .15em; z-index: 1000; }
+#sitemap a { color:white; text-decoration: none; }
+#sitemap a:hover { text-decoration: underline; }
+
+#sitemap .inner { padding:20px; }
+#sitemap a.close-button {
+    position: absolute;
+    display: block;
+    top:20px; right:20px;
+    height: 19px; overflow: hidden;
+    padding-right: 29px;
+    font-size: 13px; font-weight: normal; 
+    background: url(./i/sitemap-close-button-white.png) no-repeat top right;
+}
+#sitemap a.close-button:hover { opacity: .8; }
+
+
+#sitemap h1 { font-size: 16px; line-height: 40px; display: block; margin:0px; padding:0px; }
+
+#sitemap .sitemap-category ul { clear:both; }
+#sitemap .sitemap-category a.title {
+    text-transform: uppercase;
+    display:block;
+    padding: 10px 0px;
+    margin:0px 5px 0px 5px; 
+    clear:both;
+}
+#sitemap .sitemap-page { float:left; margin:10px 10px 0px 0px; }
+#sitemap .sitemap-page.last { clear:right; }
+#sitemap .sitemap-page a {
+    display:block; overflow:hidden;
+    border:5px solid white;
+    opacity: .9;
+}
+#sitemap .sitemap-page a:hover { opacity: 1; }
+
+
+/* FONT REPLACEMENT ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+#wrap { opacity:0; min-width: 1010px; }
+

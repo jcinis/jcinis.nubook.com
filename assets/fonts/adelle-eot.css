@@ -1,0 +1,31 @@
+@font-face {
+    font-family:"adelle-1";
+	src: url("/assets/fonts/adelle-eot-normal.eot");
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:"adelle-1";
+	src: url("/assets/fonts/adelle-eot-italic.eot");
+    font-weight:normal;
+    font-style:italic;
+}
+
+@font-face {
+    font-family:"adelle-1";
+	src: url("/assets/fonts/adelle-eot-bold.eot");
+    font-weight:bold;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:"adelle-1";
+	src: url("/assets/fonts/adelle-eot-bold-italic.eot");
+    font-weight:bold;
+    font-style:italic;
+}
+
+.webfont-adelle {
+    font-family:"adelle-1", sans-serif;
+}

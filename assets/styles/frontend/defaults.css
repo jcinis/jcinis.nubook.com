@@ -1,0 +1,10 @@
+* { margin: 0; padding: 0; }
+html { font: 12px/18px Arial, Helvetica, sans-serif; color: #262626; margin:0px; padding:0px; }
+body { margin:0px; padding:0px; }
+li { list-style: none; }
+a { color: #000; text-decoration: none; }
+a:visited, a:hover, a:active { outline: none; }
+
+.input-text, textarea { font: 12px/18px Arial, Helvetica, sans-serif; border: 0; background: none; outline: none; }
+
+.clear { clear:both; }

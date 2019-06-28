@@ -1,0 +1,142 @@
+
+/* HEADER ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+#header { border-top: 10px solid #252525; height:60px; }
+#header .stretcher { width:990px; margin: 0 auto 0 auto; height:60px; position:relative; }
+
+#logo, #slogan { float:left; height:40px; margin-top:10px; }
+#logo { position:relative; margin-right: 20px; }
+#slogan { font: italic 14px/40px adelle-1, georgia, serif; clear:right; line-height: 40px; color: #454545; position:relative; }
+
+#logo.textual a { display:block; height:40px; overflow: hidden; text-transform: uppercase; color: #252525; font: bold 32px/40px etica-light-1, Arial, Helvetica, Sans-Serif; }
+#logo.textual #graphic { display:none; }
+#logo.graphical #title { display:none; }
+
+#menu {
+    position:absolute;
+    top: 19px; right:0px;
+    font: normal 14px/22px etica-1, Arial, sans-serif;
+    color: #444444;
+}
+
+#menu ul { clear:both; }
+#menu ul li { float:left; margin-left:20px; }
+#menu ul li a { display:block; color: #252525; text-transform: uppercase; letter-spacing: .5px; }
+#menu ul li a:hover,
+#menu ul li.current a { color: #252525; border-bottom: 3px solid #999999; }
+
+/* red overwrite */
+/*
+#menu ul li a:hover,
+#menu ul li.current a { color: black; }
+#logo.textual a { background-color: #333333; }
+*/
+
+/* STAGE :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+#stage { height: 620px; position:relative; overflow: hidden; }
+
+#frame { position: relative; width:990px; height:620px; overflow: hidden; margin:0 auto 0 auto; }
+.page-view { width:990px; height:620px; overflow: hidden; }
+.page-view.loading { background: url("3balls.gif") no-repeat center center; }
+.page-view.loading .page { display:none; }
+
+.pagination-arrow { display:block; width:33px; height: 70px; overflow:hidden; background: url("assets.png") top left no-repeat; position:absolute; z-index: 10; }
+.pagination-arrow span { display:none; }
+#pagination-previous { left: 0px; background-position: 0px 0px; }
+#pagination-previous:hover { background-position: 0px -70px; }
+#pagination-next { right: 0px; background-position: -33px 0px; }
+#pagination-next:hover { background-position: -33px -70px; }
+
+
+/* FOOTER ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+#footer { background: url(footer-bg.png) repeat-x; height:94px; color: #444444; position:fixed; bottom:0px; width:100%; }
+#footer .stretcher { width:990px; margin: 0 auto 0 auto; height:94px; position:relative; }
+
+#nubook-logo {
+    display:block;
+    width:57px;
+    height:14px;
+    overflow:hidden;
+    position: absolute;
+    bottom:15px;
+    right:0px;
+    background: url("assets.png") 0px -185px;
+}
+
+#links { font: normal 11px/44px etica-1, Arial, sans-serif; position:relative; height:44px; overflow: hidden; }
+#links ul li { float:left; margin-right:20px; }
+#links ul li a { display:block; color: #444444; text-transform: uppercase; letter-spacing: .5px; }
+#links ul li a:hover { color: #999999; }
+
+#pagebar { width:990px; height: 50px; overflow: hidden; }
+#pagebar .date { font: bold 12px/50px etica-1, helvetica, arial, sans-serif; color: #7c7c7c; padding:0px; text-transform: uppercase; }
+
+.pagination { height:50px; position:relative; top:0px; float:right; left:-50%; text-align:left; }
+.pagination ul { position:relative; left:50%; clear:both; }
+.pagination li { display: block; width: 16px; height:16px; overflow:hidden; float:left; margin-right:1px; margin-top: 17px; }
+.pagination li a { display: block; width: 16px; height:16px; overflow:hidden; background: url(assets.png) -66px 0px; }
+.pagination li.last { margin-right:0px; clear:right; }
+.pagination li a:hover { background-position: -66px -16px; }
+.pagination li.current a, .pagination li.current a:hover { background-position: -66px -32px; }
+
+.pagination .text { position:relative; left:50%; clear:both; font: bold 14px/50px etica-1, Arial, sans-serif; color:#7C7C7C; }
+
+.facebook-button { display:block; width:59px; height:22px; overflow:hidden; background: url(assets.png) 0px -162px; text-indent: -9999px; position: absolute; right:61px; top:14px; }
+.facebook-button:hover { background-position: -59px -162px; }
+
+.twitter-button { display:block; width:59px; height:22px; overflow:hidden; background: url(assets.png) 0px -140px; text-indent: -9999px; position: absolute; right:0px; top:14px; }
+.twitter-button:hover { background-position: -59px -140px; }
+
+.sitemap-button { display:block; width:78px; height:26px; overflow:hidden; text-indent: -9999px; background: url(assets.png) 0px -199px; position:absolute; left: 50%; top:0px; margin-left:-39px; margin-top:8px; }
+.sitemap-button:hover { background-position: 0px -225px; }
+
+
+/* SITEMAP :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+body.sitemap-open #pagebar { visibility: hidden; }
+
+#sitemap { width: 990px; margin: 0 auto 0 auto; }
+#sitemap .sitemap-category ul { clear:both; }
+#sitemap .sitemap-category a.title {
+    text-transform: uppercase;
+    display:block;
+    font: 18px/20px etica-1, arial, verdana, sans-serif; letter-spacing: 2px;
+    padding: 10px 0px;
+    margin:0px 5px 0px 5px; 
+    color: #444444;
+    clear:both;
+}
+#sitemap .sitemap-category a.title:hover { color:#a10000; text-decoration: none; }
+#sitemap .sitemap-page {
+    float:left;
+    margin:10px 5px 10px 0px;
+}
+#sitemap .sitemap-page.last { clear:right; }
+#sitemap .sitemap-page a img { padding:5px; }
+#sitemap .sitemap-page a {
+    width:242px;height:155px;
+    display:block; overflow:hidden;
+	-moz-box-shadow: 2px 2px 3px #ccc;
+	-webkit-box-shadow: 2px 2px 3px #ccc;
+	box-shadow: 2px 2px 3px #ccc;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#cccccc')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#cccccc');
+}
+
+#sitemap .sitemap-page a:hover {
+	-moz-box-shadow: 2px 2px 3px #999;
+	-webkit-box-shadow: 2px 2px 3px #999;
+	box-shadow: 2px 2px 3px #999;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999');
+}
+
+
+
+
+/* FONT REPLACEMENT ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+#wrap { opacity:0; min-width: 1010px; }
+

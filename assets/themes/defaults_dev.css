@@ -1,0 +1,27 @@
+* { margin: 0; padding: 0; }
+html { font: 12px/18px Arial, Helvetica, sans-serif; color: #262626; margin:0px; padding:0px; }
+body { margin:0px; padding:0px; }
+li { list-style: none; }
+a { color: #000; text-decoration: none; }
+a:visited, a:hover, a:active { outline: none; }
+.input-text, textarea { font: 12px/18px Arial, Helvetica, sans-serif; border: 0; background: none; outline: none; }
+.clear { clear:both; }
+
+.subscribe-popup { position:fixed; width:100%; height:100%; overflow:hidden; z-index:100; top:0px; left:0px; }
+.subscribe-popup .hider { display: block; position: absolute; width: 100%; height: 100%; background: black; opacity: .8; z-index: 101; }
+.subscribe-popup .inner { position: absolute; top: 50%; left:50%; width: 425px; height: 113px; margin-left: -213px; margin-top: -57px; z-index: 102; }
+.subscribe-popup .inner .subscribe-top,
+.subscribe-popup .inner .subscribe-bottom { overflow:hidden; width:425px; height:30px; background:url('./share/images/subscribe-popup-top.png') top left no-repeat; }
+.subscribe-popup .inner .subscribe-bottom { background-image:url('/assets/themes/share/images/subscribe-popup-bottom.png'); }
+.subscribe-popup .inner .subscribe-middle { width:425px; height:53px; overflow:hidden; background:url('./share/images/subscribe-popup-bg.png') top left repeat-y; }
+.subscribe-popup.has-error .inner .subscribe-middle { height:73px; }
+.subscribe-popup .inner .subscribe-content { padding: 0px 30px; }
+.subscribe-popup .inner a.subscribe-button { display: block; width:107px; height:33px; float:right; overflow: hidden; background:url('./share/images/subscribe-popup-button.png') top left no-repeat; text-indent: -9999px; margin-top:2px; }
+.subscribe-popup .inner a.subscribe-button:hover { background-position: 0px -33px; }
+.subscribe-form { height:36px; padding:9px 8px 8px 8px; }
+.subscribe-popup .inner .input-text { background: url("./share/images/subscribe-popup-input.png") no-repeat scroll 0 0 transparent; border: 0 none; color: #666666; font: 14px/38px Arial,Helvetica,sans-serif; height: 38px; outline: medium none; padding: 0 12px; width: 206px; }
+.subscribe-popup .inner .input-text.focus { color:#000000; }
+.subscribe-popup .error { display:none; font: bold 14px/15px Arial, Helvetica, Verdana, Sans-Serif; color:#FF3300; padding:0px 19px 5px 19px; }
+.subscribe-popup.has-error .error { display:block; }
+.subscribe-popup .thank-you { display:none; font: bold 24px/36px Arial, Helvetica, Verdana, Sans-Serif; color:#999999; height:36px; overflow:hidden; text-align:center; padding:9px 8px 8px 8px; }
+

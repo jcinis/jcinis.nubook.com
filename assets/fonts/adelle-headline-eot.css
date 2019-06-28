@@ -1,0 +1,31 @@
+@font-face {
+	font-family: 'adelle-headline';
+	src: url("/assets/fonts/adelle-headline-eot-normal.eot");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'adelle-headline';
+	src: url("/assets/fonts/adelle-headline-eot-italic.eot");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'adelle-headline';
+	src: url("/assets/fonts/adelle-headline-eot-bold.eot");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'adelle-headline';
+	src: url("/assets/fonts/adelle-headline-eot-bold-italic.eot");
+	font-weight: bold;
+	font-style: italic;
+}
+
+.webfont-adelle-headline {
+    font-family:"adelle-headline", serif;
+}

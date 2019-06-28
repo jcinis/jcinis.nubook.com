@@ -1,0 +1,14 @@
+.template { width: 990px; height:620px; overflow:hidden; position:relative; }
+.template a { color: inherit; text-decoration: underline; }
+.template a:hover { text-decoration: none; }
+.template .media { position:absolute; top:0px; left:0px; z-index: 1; width: 990px; height: 620px; overflow:hidden; }
+.template .media .mwrap { position:absolute; top:0px; left:0px; width:0px; height:0px; background:transparent; overflow:hidden; }
+.template .media .mwrap img { position:absolute; top:0px; left:0px; }
+.template .graphic { position:absolute; top:0px; left:0px; z-index: 2; width: 990px; height: 620px; overflow:hidden; }
+.template .link { position:absolute; top:0px; left:0px; z-index: 3; width: 990px; height: 620px; overflow:hidden; }
+.template .link .lwrap { display:block; overflow:hidden; position:absolute; top:0px; left:0px; width:0px; height:0px; background: transparent; text-decoration: none; }
+.template .link a.lwrap { cursor: pointer; }
+.template .twrap { z-index: 4; position:absolute; top:0px; left:0px; width:0px; height:0px; overflow: hidden; }
+.template .ewrap { z-index: 5; position:absolute; top:0px; left:0px; width:0px; height:0px; overflow: hidden; }
+.template big { font-size:1.05em; }
+.template small { font-size:0.95em; }
